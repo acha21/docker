@@ -1,0 +1,1 @@
+nvidia-docker run -itd -e LOCAL_USER_ID=`id -u $USER` --shm-size 5gb --name cudnn10.0 -p 8969:8969 -p 8970:8970 -p 8971:8971 -v /home/acha21/data:/home/acha21/data -v /home/acha21/downloads:/home/acha21/downloads -v /home/acha21/codes:/home/acha21/codes acha21/ubuntu16.04-cuda10.0 /bin/bash 
