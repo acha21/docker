@@ -13,6 +13,7 @@ ENV LC_ALL en_US.UTF-8
 RUN sed -i 's/kr.archive.ubuntu.com/ftp.daumkakao.com/g' /etc/apt/sources.list
 
 RUN apt-get update && apt-get install -y \
+    apt-utils \
     build-essential \
     git \
     vim \
