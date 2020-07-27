@@ -12,7 +12,11 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en  
 ENV LC_ALL en_US.UTF-8  
 
-RUN sed -i 's/kr.archive.ubuntu.com/ftp.daumkakao.com/g' /etc/apt/sources.list
+RUN sed -i 's/archive.ubuntu.com/ftp.daumkakao.com/g' /etc/apt/sources.list
+RUN sed -i 's/security.ubuntu.com/ftp.daumkakao.com/g' /etc/apt/sources.list
+RUN sed -i 's/extras.ubuntu.com/ftp.daumkakao.com/g' /etc/apt/sources.list
+
+
 
 RUN apt-get update && apt-get install -y \
     build-essential \
