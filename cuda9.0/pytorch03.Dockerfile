@@ -13,3 +13,4 @@ RUN wget \
 RUN conda --version
 
 RUN conda install pytorch=0.3.1 cuda90 -c pytorch
+RUN conda install torchvision -c pytorch
